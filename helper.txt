@@ -1,2 +1,7 @@
 1. to compile: go to terminal 'truffle compile' 
 2. 'truffle migrate'
+
+to confirm you're up and running: 
+truffle console
+tether = await Tether.deployed()
+(then call tether)
