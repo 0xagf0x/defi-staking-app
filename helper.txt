@@ -1,7 +1,16 @@
 1. to compile: go to terminal 'truffle compile' 
-2. 'truffle migrate'
+2. 'truffle migrate' or 'truffle migrate --reset' 
 
 to confirm you're up and running: 
 truffle console
 tether = await Tether.deployed()
+reward = await Reward.deployed()
 (then call tether)
+
+
+to run test:  truffle test
+
+to run scripts: truffle exec scripts/_name
+
+
+to run React app:  npm run start 
