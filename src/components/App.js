@@ -8,6 +8,7 @@ import Web3 from 'web3';
 import Tether from '../truffle_abis/Tether.json';
 import Reward from '../truffle_abis/Reward.json';
 import DecentralBank from '../truffle_abis/DecentralBank.json';
+import ParticleSettings from './ParticleSettings';
 
 class App extends Component {
 
@@ -136,9 +137,13 @@ class App extends Component {
                 stakeTokens = {this.stakeTokens}
                 unstakeTokens={this.unstakeTokens}
             />}
+            
 
             return (
-            <div>
+            <div className="App" style={{position: 'relative'}}>
+                <div style={{position: 'absolute'}}>
+                    <ParticleSettings />
+                </div>
                 <Navabr account={this.state.account} />
                 <div className="container-fluid mt-5">
                     <div className="row">
