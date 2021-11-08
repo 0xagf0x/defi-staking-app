@@ -15,14 +15,18 @@ npm install
 
 ### 2. Make sure truggle -g is installed
 
-# use truffle compiile 
+# truffle compile 
 (compile contracts)
 
-# use truffle migrate --reset 
+# truffle migrate --reset 
 (migrate contracts on the blockchain)
 
-# use truffle test
+# truffle test
 to run Moch and Chai testing suite
+
+# npm run start
+to launch the React app
+
 
 ### Activate Application
 
