@@ -10,6 +10,7 @@ import Reward from '../truffle_abis/Reward.json';
 import DecentralBank from '../truffle_abis/DecentralBank.json';
 import ParticleSettings from './ParticleSettings';
 
+
 class App extends Component {
 
     async UNSAFE_componentWillMount() { // runs when app mounts in browser
@@ -93,6 +94,7 @@ class App extends Component {
 
     // staking function 
     stakeTokens = (amount) => {
+        let ethAmount = Web3.utils.fromWei(amount, 'ether');
         this.setState({loading: true});
         this.state.tether.methods.approve(this.state.decentralBank._address, amount).send({from: this.state.account}).on('transactionHash', (hash) => {
             // grab decentralBank and then grab depositTokens()....send from the state of Account....
@@ -102,7 +104,6 @@ class App extends Component {
         })
     }
 
-
     unstakeTokens = () => {
         this.setState({loading: true })
         this.state.decentralBank.methods.unstakeTokens().send({from: this.state.account}).on('transactionHash', (hash) => {
@@ -110,7 +111,7 @@ class App extends Component {
         }) 
     }
 
- 
+    
     constructor(props) {
         super(props)
         this.state = {

@@ -16,7 +16,6 @@ class ParticleSettings extends Component {
                                 value: '#0d47a1',
                             },
                         },
-
                         fpslimit: 60,
                         interactivity: {
                             detect_on: 'canvas',
@@ -67,7 +66,7 @@ class ParticleSettings extends Component {
                                  enable: true,
                                  outMode: 'bounce',
                                  random: false,
-                                 speed: 3,
+                                 speed: 1,
                                  straight: false, 
                              },
                              number: {
@@ -85,12 +84,8 @@ class ParticleSettings extends Component {
                              },
                              size: {
                                 random: true,
-                                value: 5,
+                                value: 1,
                              },
-
-
-
-                             
                         }
                     }
                 }
