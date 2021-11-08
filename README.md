@@ -1,5 +1,6 @@
 # defi-staking-app-starter
 
+![Screen Shot 2021-11-07 at 4 33 25 PM](https://user-images.githubusercontent.com/22567920/140668189-2346dcb4-9b71-404b-8fce-791bb9a3db4b.png)
 
 ### 1. cd into the directory and Install the necessary packages
 
